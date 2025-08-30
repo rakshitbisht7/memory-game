@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				game: {
+					board: 'hsl(var(--game-board))',
+					cardBack: 'hsl(var(--card-back))',
+					cardFace: 'hsl(var(--card-face))',
+					matchGlow: 'hsl(var(--match-glow))',
+					wrongMatch: 'hsl(var(--wrong-match))',
+					gold: 'hsl(var(--gold))',
+					silver: 'hsl(var(--silver))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
