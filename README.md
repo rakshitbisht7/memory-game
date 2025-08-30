@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+Memory Match Game
 
-## Project info
+A fun and responsive card matching game built with React, TypeScript, TailwindCSS, and Framer Motion. Flip cards, find pairs, and challenge yourself across multiple difficulty levels while tracking your score, time, and moves.
 
-**URL**: https://lovable.dev/projects/b0abe272-5d86-4f6f-bdde-dcb16e205f67
+🚀 Setup & Installation
 
-## How can I edit this code?
+Clone the repository
 
-There are several ways of editing your application.
+git clone https://github.com/rakshitbisht7/memory-game.git
+cd card-memory-game
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b0abe272-5d86-4f6f-bdde-dcb16e205f67) and start prompting.
+Install dependencies
 
-Changes made via Lovable will be committed automatically to this repo.
+npm install
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Run the development server
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Open http://localhost:5173
+ (or as shown in your terminal) in your browser.
 
-**Use GitHub Codespaces**
+Build for production
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+npm run build
 
-## What technologies are used for this project?
+🎮 Controls & Gameplay
 
-This project is built with:
+Flip a card → click/tap on it.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Find matching pairs → two identical cards stay revealed.
 
-## How can I deploy this project?
+Win condition → match all pairs on the board.
 
-Simply open [Lovable](https://lovable.dev/projects/b0abe272-5d86-4f6f-bdde-dcb16e205f67) and click on Share -> Publish.
+Pause/Resume → pauses timer and disables interaction.
 
-## Can I connect a custom domain to my Lovable project?
+Restart → resets the board, timer, moves, and score.
 
-Yes, you can!
+Difficulty Levels
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Easy: 4×4 grid (8 pairs)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Medium: 6×6 grid (18 pairs)
+
+✨ Features
+
+🔹 Dynamic grid sizes (Easy 4×4, Medium/Hard 6×6)
+
+🔹 Framer Motion animations → smooth card flips, hover effects, and win celebrations
+
+🔹 Game tracking → moves counter, timer, and live score calculation
+
+🔹 localStorage integration → best scores per difficulty are saved persistently
+
+🔹 Pause/Resume functionality
+
+🔹 Win modal with celebration animations & score breakdown
+
+🔹 Dark theme with purple/pink gradient highlights
+
+🔹 Responsive design → optimized for desktop & mobile
+
+🔹 Emoji-based card symbols for variety and fun
+
+🛠️ Technical Stack
+
+⚛️ React + TypeScript
+
+🎨 Tailwind CSS with custom design tokens
+
+🎞️ Framer Motion for smooth animations
+
+💾 localStorage for persistent high scores
+
+🧩 Custom hooks for game logic separation
+
+🐞 Known Issues / Future Improvements
+
+🔸 Currently only supports two grid sizes (4×4, 6×6). More could be added.
+
+🔸 No sound effects yet — could add flip/match/win sounds for extra feedback.
+
+🔸 Leaderboard is a stub (mock JSON). Could be expanded into a real backend with player profiles.
+
+🔸 Some older mobile browsers may have slight animation stutters.
+
+📸 Demo
+
+<img width="2791" height="1569" alt="Screenshot 2025-08-30 192934" src="https://github.com/user-attachments/assets/3367bae4-89fb-409f-bb1e-b39e87c9af03" />
