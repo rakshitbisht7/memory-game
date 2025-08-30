@@ -95,8 +95,9 @@ All colors MUST be HSL.
 @layer components {
   /* Game-specific component classes */
   .game-card {
-    @apply relative preserve-3d cursor-pointer transition-all duration-300;
+    @apply relative cursor-pointer transition-all duration-300;
     transform-style: preserve-3d;
+    perspective: 1000px;
   }
   
   .game-card.flipped {
@@ -104,7 +105,7 @@ All colors MUST be HSL.
   }
   
   .card-face {
-    @apply absolute inset-0 w-full h-full rounded-lg backface-hidden;
+    @apply absolute inset-0 w-full h-full rounded-lg;
     backface-visibility: hidden;
   }
   
